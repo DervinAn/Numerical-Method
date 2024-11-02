@@ -7,9 +7,11 @@ function main()
     rootB = FindRootwithB(a, b, maxiter, tol);
 
     % Appel de FindRootwithP pour la méthode de point fixe
-    x0 = 0.5;   % Point de départ
-    maxiter = 1000; % Limite d'itérations raisonnable
+    x0 = 0.5;   % Point de départ chose point
+    maxiter = 1000; % resnable number
     tol = 1e-5; % Tolérance
     rootP = FindRootwithP(x0, tol, maxiter);
+
+    FindRootwithNR(tol)
 end
 
